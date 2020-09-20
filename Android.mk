@@ -16,6 +16,18 @@
 
 LOCAL_PATH := $(call my-dir)
 
+LOCAL_SHARED_LIBRARIES := \
+libCB \
+libc++ \
+libc \
+libcutils \
+libdl \
+libgsl \
+libl \
+og \
+libm \
+libutils
+
 ifneq ($(filter twolip jasmine_sprout wayne clover lavender platina jason whyred,$(TARGET_DEVICE)),)
 
 endif
